@@ -30,7 +30,21 @@ final as (
 
         {% endif %}
     from gl_account
+),
+
+additional_sta_acc as (
+    select
+        'STA-4010' as account_no,
+        'incomestatement' as account_type,
+        'Current Month Collection Adjustment' as category,
+        null as closing_account_title,
+        'Expense' as classification,
+        'debit' as normal_balance, 
+        'Current Month Collection Adjustment' as account_title
 )
 
 select *
 from final
+union 
+select *
+from additional_sta_acc
