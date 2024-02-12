@@ -37,7 +37,7 @@ additional_sta_acc as (
         'STA-4010' as account_no,
         'incomestatement' as account_type,
         'Current Month Collection Adjustment' as category,
-        null as closing_account_title,
+        '' as closing_account_title,
         'Expense' as classification,
         'debit' as normal_balance, 
         'Current Month Collection Adjustment' as account_title
