@@ -40,7 +40,7 @@ additional_sta_acc as (
         '' as closing_account_title,
         'Expense' as classification,
         'debit' as normal_balance, 
-        'Accrual to Cash Adjustment' as account_title
+        'Current Month Collection Adjustment' as account_title
 )
 
 select *
