@@ -41,6 +41,15 @@ additional_sta_acc as (
         'Expense' as classification,
         'debit' as normal_balance, 
         'Current Month Collection Adjustment' as account_title
+    union
+    select
+        'STA-4025',
+        'incomestatement',
+        'FSBO' as category,
+        '' as closing_account_title,
+        'Expense' as classification,
+        'debit' as normal_balance, 
+        'FSBO' as account_title
 )
 
 select *
