@@ -2,7 +2,8 @@ with general_ledger_by_period as (
     select *
     from {{ ref('sage_intacct__general_ledger_by_period') }}
     where account_type = 'incomestatement'
-        or account_no in ('264-0001', '264-0003')
+        or account_no in ('264-0001', '264-0003', '160-0800')
+        or account_no like '265-%'
 ), 
     
 final as (
