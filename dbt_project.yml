@@ -5,11 +5,11 @@ require-dbt-version: [">=1.3.0", "<2.0.0"]
 models:
   sage_intacct:
     +materialized: table
-    +schema: sage
+    +schema: cdata_sage
     intermediate:
       +materialized: view
   sage_intacct_source:
-    +schema: sage_staging
+    +schema: cdata_sage_staging
 vars:
   sage_intacct_database: havenpark
   sage_intacct_schema: sage
