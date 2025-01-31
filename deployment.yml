@@ -4,4 +4,4 @@ jobs:
   schedule: 0 8 * * *
   steps:
      - name: run models
-       command: dbt run
+       command: dbt run --select +int_sage_intacct__general_ledger_date_spine +stg_sage_intacct__gl_detail_tmp +stg_sage_intacct__gl_detail +int_sage_intacct__active_gl_detail +int_sage_intacct__retained_earnings +int_sage_intacct__general_ledger_balances +sage_intacct__general_ledger +int_sage_intacct__account_classifications +stg_sage_intacct__gl_account +sage_intacct__profit_and_loss +stg_sage_intacct__gl_account_tmp +sage_intacct__general_ledger_by_period +stg_sage_intacct__gl_batch +stg_sage_intacct__gl_batch_tmp
