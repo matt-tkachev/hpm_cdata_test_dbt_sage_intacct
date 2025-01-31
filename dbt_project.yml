@@ -12,7 +12,7 @@ models:
     +schema: cdata_sage_staging
 vars:
   sage_intacct_database: havenpark
-  sage_intacct_schema: sage
+  sage_intacct_schema: cdata_sage
   sage_account_pass_through_columns: []
   sage_gl_pass_through_columns: []
   sage_intacct:
